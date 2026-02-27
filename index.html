@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservasi Band</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎵 Reservasi Band Studio</h1>
+
+  <form id="reservationForm">
+    <label>Nama Pemesan</label>
+    <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+
+    <label>Nama Band</label>
+    <input type="text" id="band" placeholder="Masukkan nama band">
+
+    <label>Tanggal Acara</label>
+    <input type="date" id="tanggal">
+
+    <label>Durasi (jam)</label>
+    <input type="number" id="durasi" placeholder="Contoh: 2">
+
+    </select>
+
+    <button type="submit" class="btn-primary">Simpan Reservasi</button>
+  </form>
+
+  <h2>📋 Daftar Reservasi</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Band</th>
+        <th>Tanggal</th>
+        <th>Durasi</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="dataTable"></tbody>
+  </table>
+</div>
+
+<script src="assets/javascript/script.js"></script>
+</body>
+</html>
